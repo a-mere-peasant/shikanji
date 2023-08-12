@@ -1,0 +1,48 @@
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+ul, ol, dl {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  list-style-position: outside;
+}
+a:hover, a:focus {
+  color: #0078a0;
+}
+a:hover {
+  cursor: pointer;
+}
+a {
+  color: #008CBA;
+  line-height: inherit;
+  text-decoration: none;
+  }
+h1{
+	color:#fffff1;
+}
+body{
+	background: #0f0f0f;
+	color: #f1e1ee;
+	font-family: Poppins,sans-serif;
+	cursor:auto
+}
+code{	
+	background-color: #f8f8f8;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-width: 1px;
+	color: #333;
+	font-family: Consolas,"Liberation Mono",Courier,monospace;
+	font-weight: normal;
+	padding: 0.125rem 0.3125rem 0.0625rem;
+}
+pre code {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
