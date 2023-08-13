@@ -1,27 +1,31 @@
 pre {
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.header-name{
+	font-size:4rem;
+	color:#fff343;
+	padding: 0px;
+	margin-top: 4rem;
+	margin-bottom: 0px;
+}
+.navigation{
+	font-size:2.5rem;
+	color: lemonchiffon;
+	margin-top: 0px;
+}
+.navigation :not(a:first-child){
+	margin-left:1rem;
 }
 ul, ol, dl {
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.6;
-  list-style-position: outside;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: 1.6;
+	list-style-position: outside;
 }
-a:hover, a:focus {
-  color: #0078a0;
-}
-a:hover {
-  cursor: pointer;
-}
-a {
-  color: #008CBA;
-  line-height: inherit;
-  text-decoration: none;
-  }
 h1{
 	color:#fffff1;
 }
@@ -29,20 +33,33 @@ body{
 	background: #0f0f0f;
 	color: #f1e1ee;
 	font-family: Poppins,sans-serif;
-	cursor:auto
+	cursor:auto;
+	margin-left:4rem;
 }
 code{	
-	background-color: #f8f8f8;
-	border-color: #dfdfdf;
-	border-style: solid;
-	border-width: 1px;
-	color: #333;
+	background-color: #333;
+	color: #fff;
 	font-family: Consolas,"Liberation Mono",Courier,monospace;
 	font-weight: normal;
 	padding: 0.125rem 0.3125rem 0.0625rem;
+
 }
-pre code {
+pre {
 	background-color: transparent;
 	border: 0;
 	padding: 0;
+}
+a:hover, a:focus {
+	background: linear-gradient(-65deg,#64d55b,#d1f444,#ffe700);
+	background-clip:text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+a:hover {
+	cursor: pointer;
+}
+a {
+	color: lemonchiffon;
+	line-height: inherit;
+	text-decoration: none;
 }
