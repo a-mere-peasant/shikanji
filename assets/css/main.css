@@ -17,6 +17,9 @@ pre {
 	color: lemonchiffon;
 	margin-top: 0px;
 }
+.navigation > a{
+	color:lemonchiffon;
+}
 .navigation :not(a:first-child){
 	margin-left:1rem;
 }
@@ -49,17 +52,43 @@ pre {
 	border: 0;
 	padding: 0;
 }
-a:hover, a:focus {
-	background: linear-gradient(-65deg,#64d55b,#d1f444,#ffe700);
+a:hover, a:focus{
 	background-clip:text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background: linear-gradient(107deg, #008cba, #29e1da, #65ee18, #ebfb0b);
+	background-size: 800% 800%;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	-webkit-animation: wow-link 6s ease infinite;
+	-moz-animation: wow-link 6s ease infinite;
+	-o-animation: wow-link 6s ease infinite;
+	animation: wow-link 6s ease infinite;
+}
+
+@-webkit-keyframes wow-link {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 51%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes wow-link {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 51%}
+	100%{background-position:0% 50%}
+}
+@-o-keyframes wow-link {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 51%}
+	100%{background-position:0% 50%}
+}
+@keyframes wow-link {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 51%}
+	100%{background-position:0% 50%}
 }
 a:hover {
 	cursor: pointer;
 }
 a {
-	color: lemonchiffon;
+	color: #008CBA;
 	line-height: inherit;
 	text-decoration: none;
 }
