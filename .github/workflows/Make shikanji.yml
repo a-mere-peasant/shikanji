@@ -26,7 +26,13 @@ jobs:
 
         - name: Check deployment structure
           run : ls
+        
+        - name: Setup Pages
+          uses: actions/configure-pages@v3
 
+        - name: Upload Artifact
+          uses: actions/upload-pages-artifact@v2
+        
         - name: Deploy to Github Pages
           with:
             path: '/site'
