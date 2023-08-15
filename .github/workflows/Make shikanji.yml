@@ -23,19 +23,12 @@ jobs:
 
         - name: Build the site
           run: npm start
-    
-    deploy:
-        runs-on: ubuntu-latest
 
-        permissions:
-            pages: write      # to deploy to Pages
-            id-token: write   # to verify the deployment originates from an appropriate source
+        - name: Check deployment structure
+          run : ls
 
-    # Deploy to the github-pages environment
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        steps:
-          - name: Deploy to Github Pages
-            uses: actions/deploy-pages@v2
+        - name: Deploy to Github Pages
+          with:
+            path: '/site'
+          uses: actions/deploy-pages@v2
             
