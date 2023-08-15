@@ -5,6 +5,11 @@ pre {
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
 }
+a {
+	color: white;
+	line-height: inherit;
+	text-decoration: underline;
+}
 .header-name{
 	font-size:4rem;
 	color:#fff343;
@@ -13,16 +18,22 @@ pre {
 	margin-bottom: 0px;
 }
 .navigation{
-	font-size:2.5rem;
+	font-size:2.7rem;
 	color: lemonchiffon;
 	margin-top: 0px;
 }
 .navigation > a{
 	color:lemonchiffon;
+	text-decoration:none;
 }
 .navigation :not(a:first-child){
 	margin-left:1rem;
 }
+.post_section_item{
+	color:#f1f1f1;
+	font-size:1.2rem;
+	text-decoration:none;
+}	
 ul, ol, dl {
 	font-family: inherit;
 	font-size: 1rem;
@@ -45,6 +56,8 @@ code{
 	font-family: Consolas,"Liberation Mono",Courier,monospace;
 	font-weight: normal;
 	padding: 0.125rem 0.3125rem 0.0625rem;
+	width: auto;
+	display: block;
 
 }
 pre {
@@ -86,9 +99,4 @@ a:hover, a:focus{
 }
 a:hover {
 	cursor: pointer;
-}
-a {
-	color: #008CBA;
-	line-height: inherit;
-	text-decoration: none;
 }
