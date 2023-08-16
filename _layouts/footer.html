@@ -1,6 +1,8 @@
 <footer>
-	Copyright <div id="curryear"></div> shikanji
 </footer>
-<script type="javascript">
-document.querySelector("#curryear").innerHTML = new Date().getFullYear()
+<script>
+addEventListener("DOMContentLoaded", (event) => {
+document.querySelector("footer").innerHTML = "© " + new Date().getFullYear() + " shikanji";
+});
+
 </script>

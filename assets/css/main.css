@@ -70,7 +70,8 @@ a:hover {
 }
 footer{
 	bottom:0px;
-	position:relative;
-	justify-content:center;
-	align-items:center;
+	position:fixed;
+	width: 100%;
+	justify-content: center;
+	display: flex;
 }
