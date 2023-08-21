@@ -56,7 +56,7 @@ function make_post(input_file,post_dir){
 			}
 		});	
 	});
-	return input_file.split(".")[0];
+	return encodeURIComponent(input_file.split(".")[0]);
 }
 
 async function make_site_dir(output_dir_name){
@@ -79,7 +79,7 @@ function build_post_index(post_index){
 	for(const section_header in post_index){
 		post_index_html += "<h2 class=\"post_index_section\">"+section_header+"</h2><br><ul>";
 		post_index[section_header].forEach((section_item)=>{
-			post_index_html += "<li><a href=\"../_posts/"+section_item+".html\" class=\"post_section_item\">"+section_item + "</a></li>";
+			post_index_html += "<li><a href=\"../_posts/"+section_item+".html\" class=\"post_section_item\">"+decodeURIComponent(section_item) + "</a></li>";
 
 		});
 		post_index_html += "</ul><br>";
